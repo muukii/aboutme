@@ -5,15 +5,18 @@
  * See: https://www.gatsbyjs.org/docs/static-query/
  */
 
-import React from "react"
-import PropTypes from "prop-types"
+import * as React from "react"
 
-// import "normalize.css"
+import "./layout.css"
+import "normalize.css"
+import styled from "styled-components"
 
-const Layout = ({ children }) => <>{children}</>
+// @ts-ignore
+const Layout = ({ children }) => (
+  <>
+    <Container>{children}</Container>
+  </>
+)
 
-Layout.propTypes = {
-  children: PropTypes.node.isRequired,
-}
-
+const Container = styled.div``
 export default Layout
