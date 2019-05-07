@@ -8,7 +8,7 @@
 import * as React from "react"
 
 import "./layout.css"
-import "normalize.css"
+import "./ress.css"
 import styled from "styled-components"
 
 // @ts-ignore
